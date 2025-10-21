@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul Wheels - Mobile Korean BBQ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/newest.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation-bar">
+            <div class="container">
+                <div class="company-logo">
+                    Seoul Wheels
+                </div>
+                <ul class="navigation-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Reviews</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="button-navigation">Book Event</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="main-banner">
+            <div class="banner-background">
+                <div class="background-pattern"></div>
+                <div class="background-gradient"></div>
+            </div>
+            <div class="container">
+                <div class="banner-layout">
+                    <div class="banner-text-content">
+                        <div class="top-label">All-You-Can-Eat Mobile Experience</div>
+                        <h1>Korean BBQ<br><span class="orange-text">At Your Place</span></h1>
+                        <p class="main-description">We bring the tables, grills, and unlimited premium meats to your location. You and your guests enjoy the authentic Korean BBQ experience - cooking your own food right at the table, just like in Seoul.</p>
+                        <div class="price-display">
+                            <span class="price-label">Starting at</span>
+                            <span class="price-number">$30-40</span>
+                            <span class="price-text">per person</span>
+                        </div>
+                        <div class="button-group">
+                            <a href="#contact" class="button-primary">Get a Quote</a>
+                            <a href="#menu" class="button-secondary">See What's Included</a>
+                        </div>
+                        <div class="feature-list">
+                            <div class="feature-box">
+                                <span class="feature-number">Unlimited</span>
+                                <span class="feature-description">Premium Meats</span>
+                            </div>
+                            <div class="feature-box">
+                                <span class="feature-number">Full</span>
+                                <span class="feature-description">Table Setup</span>
+                            </div>
+                            <div class="feature-box">
+                                <span class="feature-number">You</span>
+                                <span class="feature-description">Cook It Your Way</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual-cards-area">
+                        <div class="display-card position-1">
+                            <div class="card-text">
+                                <h3>BULGOGI</h3>
+                                <p>Marinated Beef</p>
+                            </div>
+                        </div>
+                        <div class="display-card position-2">
+                            <div class="card-text">
+                                <h3>GALBI</h3>
+                                <p>Short Ribs</p>
+                            </div>
+                        </div>
+                        <div class="display-card position-3">
+                            <div class="card-text">
+                                <h3>UNLIMITED</h3>
+                                <p>All You Can Eat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-area">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">What We Offer</span>
+                    <h2>Full-Service Mobile Korean BBQ</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-box">
+                        <div class="service-number">01</div>
+                        <h3>We Bring Everything</h3>
+                        <p>Tables, portable grills, utensils, plates - our team sets up a complete Korean BBQ station at your venue</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-number">02</div>
+                        <h3>You Cook It Yourself</h3>
+                        <p>Experience authentic Korean BBQ tradition - grill your own meat at the table, just like in Seoul's best restaurants</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-number">03</div>
+                        <h3>All-You-Can-Eat</h3>
+                        <p>Unlimited premium meats, sides, and banchan throughout your event. Keep grilling as much as you want!</p>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-number">04</div>
+                        <h3>$30-40 Per Person</h3>
+                        <p>Flat rate pricing includes everything - setup, unlimited food, service, and cleanup. No hidden fees</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-area">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-label">Unlimited Menu</span>
+                    <h2>All-You-Can-Eat Selection</h2>
+                    <p class="section-description">Every option below is included in your all-you-can-eat package. Grill as much as you want!</p>
+                </div>
+                
+                <div class="menu-filter-buttons">
+                    <button class="filter-button active" data-category="all">All</button>
+                    <button class="filter-button" data-category="beef">Beef</button>
+                    <button class="filter-button" data-category="pork">Pork</button>
+                    <button class="filter-button" data-category="chicken">Chicken</button>
+                    <button class="filter-button" data-category="seafood">Seafood</button>
+                </div>
+
+                <div class="menu-grid">
+                    <div class="menu-item-box" data-category="beef">
+                        <div class="menu-item-header">
+                            <h3>Bulgogi</h3>
+                            <span class="item-price">Unlimited</span>
+                        </div>
+                        <p>Thinly sliced marinated beef in sweet soy sauce - perfect for quick grilling at your table</p>
+                        <span class="item-badge popular">Most Popular</span>
+                    </div>
+                    <div class="menu-item-box" data-category="beef">
+                        <div class="menu-item-header">
+                            <h3>Kalbi (Short Ribs)</h3>
+                            <span class="item-price">Unlimited</span>
+                        </div>
+                        <p>Premium beef short ribs marinated in our signature sauce - grill to your perfect doneness</p>
+                        <span class="item-badge">Premium</span>
+                    </div>
+                    <div class="menu-item-box" data-category="beef">
+                        <div class="menu-item-header">
+                            <h3>Beef Belly</h3>
+                            <span class="item-price">Unlimited</span>
+                        </div>
+                        <p>Tender beef belly slices that caramelize beautifully on the grill</p>
+                    </div>
+                    <div class="menu-item-box" data-category="beef">
+                        <div class="menu-item-header">
+                            <h3>Garlic Beef</h3>
+                            <span class="item-price">Unlimited</span>
+                        </div>
+                        <p>Beef marinated with fresh garlic and sesame oil for bold flavor</p>
+                    </div>
+                    <div class="menu-item-box" data-category="beef">
+                        <div class="menu-item-header">
+                            <h3>Spicy Bulgogi</h3>
+                            <span class="item-price">Unlimited</span>
+                        </div>
+                        <p>Our classic bulgogi with a spicy kick of gochugaru and gochujang</p>
+                        <span class="item-badge spicy">Spicy</span>
+                    </div>
+                    <div class="menu-item-box" data-category="pork">
+                        <div class="menu-item-header">
+                            <h3>Pork Belly</h3>
+                            <span class="item-price">Unlimited</span>
+                        </div>
+                        <p>Thick-cut pork belly served with lettuce wraps and ssamjang</p>
+                    </div>
+                    <div class="menu-item-box" data-category="pork">
+                        <div class="menu-item-header">
+                            <h3>Spicy Pork</h3>
+                            <span class="item-price">Unlimited</span>
+                        </div>
+                        <p>Pork shoulder marinated in spicy Korean chili paste</p>
+                        <span class="item-badge spicy">Spicy</span>
+                    </div>
+                    <div class="menu-item-box" data-category="pork">
+                        <div class="menu-item-header">
+                            <h3>Spicy Pork Belly</h3>
+                            <span class="item-price">Unlimited</span>
+                        </div>
+                        <p>Pork belly with a spicy marinade for those who love heat</p>
+                        <span class="item-badge spicy">Spicy</span>
+                    </div>
+                    <div class="menu-item-box" data-category="pork">
+                        <div class="menu-item-header">
+                            <h3>Kimchi Pork Belly</h3>
+                            <span class="item-price">Unlimited</span>
+                        </div>
+                        <p>Pork belly with kimchi marinade for authentic Korean flavor</p>
+                    </div>
+                    <div class="menu-item-box" data-category="chicken">
+                        <div class="menu-item-header">
+                            <h3>Spicy Chicken</h3>
+                            <span class="item-price">Unlimited</span>
+                        </div>
+                        <p>Chicken thighs in spicy gochujang marinade</p>
+                        <span class="item-badge spicy">Spicy</span>
+                    </div>
+                    <div class="menu-item-box" data-category="chicken">
+                        <div class="menu-item-header">
+                            <h3>Garlic Chicken</h3>
+                            <span class="item-price">Unlimited</span>
+                        </div>
+                        <p>Chicken marinated with garlic and soy for savory flavor</p>
+                    </div>
+                </div>
+
+                <div class="side-dishes-section">
+                    <h3>Complimentary Banchan (Side Dishes)</h3>
+                    <div class="side-dishes-list">
+                        <span>Kimchi</span>
+                        <span>Pickled Radish</span>
+                        <span>Bean Sprouts</span>
+                        <span>Seasoned Spinach</span>
+                        <span>Korean Potato Salad</span>
+                        <span>Steamed Rice</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="testimonials-area">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-label">What People Say</span>
+                    <h2>Customer Reviews</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-box">
+                        <div class="stars">★★★★★</div>
+                        <p>"Seoul Wheels catered our company event and it was incredible! Everyone loved cooking their own food and the unlimited meats were amazing. Highly recommend!"</p>
+                        <div class="reviewer-name">- Sarah M.</div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="stars">★★★★★</div>
+                        <p>"Best birthday party ever! The setup was professional, the food was delicious, and the interactive cooking made it so fun. Worth every penny!"</p>
+                        <div class="reviewer-name">- Mike T.</div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="stars">★★★★★</div>
+                        <p>"We hired Seoul Wheels for our wedding reception. The quality of the meat was outstanding and our guests are still talking about it months later!"</p>
+                        <div class="reviewer-name">- Jessica & David</div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="stars">★★★★★</div>
+                        <p>"Authentic Korean BBQ right at our backyard! Chef Kim and his team were fantastic. The all-you-can-eat format was perfect for our group."</p>
+                        <div class="reviewer-name">- Robert K.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-area">
+            <div class="container">
+                <div class="about-layout">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <div class="placeholder-text">placeholder (idk)</div>
+                        </div>
+                    </div>
+                    <div class="about-text-content">
+                        <span class="section-label">Our Story</span>
+                        <h2>Family Recipes, Modern Service</h2>
+                        <p>Seoul Wheels was born from a simple idea: bringing the authentic Korean BBQ experience directly to people's celebrations. Founded in 2025, we've revolutionized mobile catering with our all-you-can-eat concept.</p>
+                        <p>We bring everything - tables with built-in grills, unlimited premium meats, and all the traditional sides. Your guests cook their own food at the table, creating an interactive dining experience that's both delicious and memorable.</p>
+                        <p>Our all-you-can-eat model means no one goes hungry. Keep the meat coming, try everything on the menu, and enjoy authentic Korean BBQ the way it's meant to be experienced - with friends, family, and unlimited servings.</p>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <span class="checkmark">✓</span>
+                                <span>Fully Licensed & Insured</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="checkmark">✓</span>
+                                <span>Health Department Certified</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="checkmark">✓</span>
+                                <span>Award-Winning Service</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-area">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-information">
+                        <span class="section-label light">Get in Touch</span>
+                        <h2>Ready to Book?</h2>
+                        <p>Fill out the form and we'll get back to you within 24 hours with a custom quote for your event.</p>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-detail-box">
+                                <span class="detail-label">PHONE</span>
+                                <div>
+                                    <a href="tel:###-####">(###) ###-####</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-box">
+                                <span class="detail-label">EMAIL</span>
+                                <div>
+                                    <a href="mailto:hello@seoulwheels.com">hello@seoulwheels.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-box">
+                                <span class="detail-label">SERVICE AREA</span>
+                                <div>
+                                    <span>100 Mile Radius of Bozeman MT</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label>Name</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-field">
+                                <label>Phone</label>
+                                <input type="tel" required>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label>Email</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label>Event Date</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="form-field">
+                                <label>Number of Guests</label>
+                                <input type="number" min="10" required placeholder="10">
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label>Event Details</label>
+                            <textarea rows="5" placeholder="Tell us about your event, location, and any special requests..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Request Quote</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        Seoul Wheels
+                    </div>
+                    <p>Bringing authentic Korean BBQ to your events since 2019</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#menu">Menu</a>
+                        <a href="#gallery">Gallery</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="tel:555-0123">(555) 012-3456</a>
+                        <a href="mailto:hello@seoulwheels.com">hello@seoulwheels.com</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Hours</h4>
+                        <p>Mon-Fri: 10am - 10pm</p>
+                        <p>Sat-Sun: 9am - 11pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Seoul Wheels Mobile Korean BBQ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.navigation-menu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.classList.toggle('active');
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    navMenu.classList.remove('active');
+                    mobileToggle.classList.remove('active');
+                }
+            });
+        });
+
+        const categoryBtns = document.querySelectorAll('.filter-button');
+        const menuCards = document.querySelectorAll('.menu-item-box');
+
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const category = btn.dataset.category;
+                menuCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
