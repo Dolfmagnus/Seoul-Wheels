@@ -776,7 +776,7 @@ body {
 .form-field input,
 .form-field textarea {
     width: 100%;
-    
+    padding: 1rem;
     border: 2px solid var(--border);
     border-radius: 8px;
     font-size: 1rem;
