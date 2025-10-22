@@ -12,6 +12,7 @@ body {
     line-height: 1.6;
     color: var(--black);
     background-color: var(--white);
+    padding-top: 80px;
 }
 
 .container {
@@ -23,8 +24,10 @@ body {
 .navigation-bar {
     background-color: var(--white);
     padding: 1.2rem 0;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     box-shadow: 0 2px 20px rgba(0,0,0,0.08);
     border-bottom: 2px solid var(--orange);
@@ -420,7 +423,7 @@ body {
     font-size: 3.5rem;
     font-weight: 900;
     color: var(--orange);
-    opacity: 0.2;
+    opacity: 0.15;
     margin-bottom: 1rem;
     line-height: 1;
 }
@@ -577,47 +580,80 @@ body {
 
 .reviews-area {
     padding: 100px 30px;
-    background-color: var(--light-gray);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.reviews-area .section-header {
+    text-align: center;
+}
+
+.reviews-area .section-label {
+    color: var(--orange);
+}
+
+.reviews-area h2 {
+    color: var(--white);
 }
 
 .reviews-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .review-box {
-    background-color: var(--white);
+    background: rgba(255,255,255,0.05);
     padding: 2.5rem;
-    border-radius: 12px;
-    border: 2px solid var(--border);
-    transition: all 0.3s ease;
+    border-radius: 16px;
+    border: 2px solid rgba(255,107,53,0.2);
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.review-box::before {
+    content: '"';
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 6rem;
+    color: var(--orange);
+    opacity: 0.1;
+    font-family: Georgia, serif;
+    line-height: 1;
 }
 
 .review-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(255,107,53,0.3);
     border-color: var(--orange);
+    background: rgba(255,255,255,0.08);
 }
 
 .stars {
     color: var(--orange);
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    letter-spacing: 3px;
 }
 
 .review-box p {
-    color: #555;
-    line-height: 1.7;
-    font-size: 1rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.8;
+    font-size: 1.05rem;
     margin-bottom: 1.5rem;
     font-style: italic;
+    position: relative;
+    z-index: 1;
 }
 
 .reviewer-name {
     font-weight: 700;
-    color: var(--black);
+    color: var(--orange);
     font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .gallery-area {
@@ -739,41 +775,41 @@ body {
 }
 
 .contact-area {
-    padding: 100px 30px;
+    padding: 80px 30px;
     background-color: var(--orange);
     color: var(--white);
 }
 
 .contact-area h2 {
-    color: var(--white);
+    color: var(--black);
     font-size: 3rem;
 }
 
 .contact-layout {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 .contact-information p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.7;
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     color: rgba(255,255,255,0.9);
 }
 
 .contact-details-list {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 .contact-detail-box {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
-    padding: 1.5rem;
+    gap: 0.6rem;
+    padding: 1.2rem;
     background-color: rgba(0,0,0,0.2);
     border-radius: 8px;
     border-left: 4px solid var(--black);
