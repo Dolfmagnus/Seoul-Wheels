@@ -110,6 +110,12 @@ body {
 
 /* footer */
 
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 4rem 0 2rem;
+}
+
 .footer-content {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
