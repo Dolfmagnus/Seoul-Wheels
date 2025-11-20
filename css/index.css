@@ -212,6 +212,19 @@
     z-index: 3;
 }
 
+.position-1::before {
+      content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/bulgogi.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+}
+
 .position-2 {
     background: linear-gradient(135deg, #2d2d2d 0%, var(--black) 100%);
     border: 2px solid var(--orange);
