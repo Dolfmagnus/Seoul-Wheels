@@ -213,16 +213,16 @@
 }
 
 .position-1::before {
-      content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('../images/bulgogi.jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.25;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/bulgogi.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
 }
 
 .position-2 {
@@ -233,11 +233,37 @@
     z-index: 2;
 }
 
+.position-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/kalbi.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+}
+
 .position-3 {
     background: linear-gradient(135deg, var(--orange) 0%, #ff8c5a 100%);
     top: 240px;
     left: 50px;
     z-index: 1;
+}
+
+.position-3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/ayce.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
 }
 
 .card-text h3 {
