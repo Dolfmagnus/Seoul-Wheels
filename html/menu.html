@@ -3,9 +3,461 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu - Seoul Wheels</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/menu.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="navigation-bar">
+            <div class="container">
+                <div class="company-logo">
+                    <img src="../images/logo.png" alt="logo">
+                    Seoul Wheels
+                </div>
+                <ul class="navigation-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a class="active" href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="button-navigation">Book Event</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="menu-hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-label">Our Menu</span>
+                    <h1>All-You-Can-Eat<br><span class="orange-text">Korean BBQ</span></h1>
+                    <p class="hero-description">Every item on our menu is unlimited. Grill as much as you want, try everything, and come back for seconds (or thirds!). All included in our $30-40 per person flat rate.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Categories -->
+        <section class="menu-section">
+            <div class="container">
+                <div class="menu-filter-buttons">
+                    <button class="filter-button active" data-category="all">All Items</button>
+                    <button class="filter-button" data-category="beef">Beef</button>
+                    <button class="filter-button" data-category="pork">Pork</button>
+                    <button class="filter-button" data-category="chicken">Chicken</button>
+                    <button class="filter-button" data-category="sides">Sides & Rice</button>
+                </div>
+
+                <!-- Beef Section -->
+                <div class="category-section" data-category="beef">
+                    <div class="category-header">
+                        <h2>Premium Beef</h2>
+                        <span class="unlimited-badge">Unlimited</span>
+                    </div>
+                    
+                    <div class="menu-grid">
+                        <div class="menu-item-card">
+                            <div class="item-image-placeholder">🥩</div>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3>Bulgogi</h3>
+                                    <span class="badge popular">Most Popular</span>
+                                </div>
+                                <p class="item-description">Thinly sliced beef marinated in our signature sweet soy sauce blend with Asian pear, garlic, and sesame oil. Quick-cooking and perfect for beginners.</p>
+                                <div class="item-tags">
+                                    <span class="tag">Sweet</span>
+                                    <span class="tag">Savory</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item-card">
+                            <div class="item-image-placeholder">🍖</div>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3>Kalbi (Short Ribs)</h3>
+                                    <span class="badge premium">Premium Cut</span>
+                                </div>
+                                <p class="item-description">Premium beef short ribs marinated in our house kalbi sauce with soy, garlic, and brown sugar. Tender, juicy, and incredibly flavorful.</p>
+                                <div class="item-tags">
+                                    <span class="tag">Rich</span>
+                                    <span class="tag">Tender</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item-card">
+                            <div class="item-image-placeholder">🥩</div>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3>Spicy Bulgogi</h3>
+                                    <span class="badge spicy">Spicy 🌶️</span>
+                                </div>
+                                <p class="item-description">Our classic bulgogi with added gochugaru (Korean chili flakes) and gochujang for a spicy kick. Same tender beef, more heat.</p>
+                                <div class="item-tags">
+                                    <span class="tag">Spicy</span>
+                                    <span class="tag">Bold</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item-card">
+                            <div class="item-image-placeholder">🥩</div>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3>Beef Belly</h3>
+                                </div>
+                                <p class="item-description">Tender, marbled beef belly slices that caramelize beautifully on the grill. Rich flavor with a satisfying texture.</p>
+                                <div class="item-tags">
+                                    <span class="tag">Marbled</span>
+                                    <span class="tag">Rich</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item-card">
+                            <div class="item-image-placeholder">🥩</div>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3>Garlic Beef</h3>
+                                </div>
+                                <p class="item-description">Beef marinated with fresh minced garlic, sesame oil, and soy sauce. Simple but incredibly flavorful - garlic lovers' favorite.</p>
+                                <div class="item-tags">
+                                    <span class="tag">Garlicky</span>
+                                    <span class="tag">Aromatic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pork Section -->
+                <div class="category-section" data-category="pork">
+                    <div class="category-header">
+                        <h2>Pork Selection</h2>
+                        <span class="unlimited-badge">Unlimited</span>
+                    </div>
+                    
+                    <div class="menu-grid">
+                        <div class="menu-item-card">
+                            <div class="item-image-placeholder">🥓</div>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3>Pork Belly (Samgyeopsal)</h3>
+                                    <span class="badge popular">Customer Favorite</span>
+                                </div>
+                                <p class="item-description">Thick-cut, unmarinated pork belly - the authentic Korean BBQ experience. Grill until crispy, wrap in lettuce with ssamjang and garlic.</p>
+                                <div class="item-tags">
+                                    <span class="tag">Classic</span>
+                                    <span class="tag">Crispy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item-card">
+                            <div class="item-image-placeholder">🥓</div>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3>Spicy Pork</h3>
+                                    <span class="badge spicy">Spicy 🌶️🌶️</span>
+                                </div>
+                                <p class="item-description">Pork shoulder marinated in spicy gochujang sauce with Korean chili paste, garlic, and ginger. Bold, fiery, and addictive.</p>
+                                <div class="item-tags">
+                                    <span class="tag">Very Spicy</span>
+                                    <span class="tag">Bold</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item-card">
+                            <div class="item-image-placeholder">🥓</div>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3>Spicy Pork Belly</h3>
+                                    <span class="badge spicy">Spicy 🌶️</span>
+                                </div>
+                                <p class="item-description">Our thick-cut pork belly with a spicy marinade. Best of both worlds - the richness of pork belly with a kick of heat.</p>
+                                <div class="item-tags">
+                                    <span class="tag">Spicy</span>
+                                    <span class="tag">Rich</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item-card">
+                            <div class="item-image-placeholder">🥓</div>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3>Kimchi Pork Belly</h3>
+                                </div>
+                                <p class="item-description">Pork belly marinated with kimchi juice and spices. The fermented flavors add depth and authentic Korean character.</p>
+                                <div class="item-tags">
+                                    <span class="tag">Tangy</span>
+                                    <span class="tag">Authentic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chicken Section -->
+                <div class="category-section" data-category="chicken">
+                    <div class="category-header">
+                        <h2>Chicken Options</h2>
+                        <span class="unlimited-badge">Unlimited</span>
+                    </div>
+                    
+                    <div class="menu-grid">
+                        <div class="menu-item-card">
+                            <div class="item-image-placeholder">🍗</div>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3>Spicy Chicken</h3>
+                                    <span class="badge spicy">Spicy 🌶️</span>
+                                </div>
+                                <p class="item-description">Chicken thighs marinated in spicy gochujang sauce. Juicy, tender, and packed with Korean flavor. Great for those who want heat without beef or pork.</p>
+                                <div class="item-tags">
+                                    <span class="tag">Spicy</span>
+                                    <span class="tag">Juicy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item-card">
+                            <div class="item-image-placeholder">🍗</div>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3>Garlic Chicken</h3>
+                                </div>
+                                <p class="item-description">Chicken thighs in savory garlic and soy marinade. Milder option with great flavor - perfect for those who prefer less spice.</p>
+                                <div class="item-tags">
+                                    <span class="tag">Mild</span>
+                                    <span class="tag">Savory</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sides Section -->
+                <div class="category-section" data-category="sides">
+                    <div class="category-header">
+                        <h2>Sides & Accompaniments</h2>
+                        <span class="unlimited-badge">Unlimited</span>
+                    </div>
+                    
+                    <div class="menu-grid">
+                        <div class="menu-item-card">
+                            <div class="item-image-placeholder">🍚</div>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3>Chicken & Beef Fried Rice</h3>
+                                </div>
+                                <p class="item-description">Fried rice with chicken and beef, vegetables, and egg. A hearty addition to your BBQ feast.</p>
+                                <div class="item-tags">
+                                    <span class="tag">Filling</span>
+                                    <span class="tag">Savory</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu-item-card">
+                            <div class="item-image-placeholder">🍚</div>
+                            <div class="item-content">
+                                <div class="item-header">
+                                    <h3>Steamed White Rice</h3>
+                                </div>
+                                <p class="item-description">Perfectly steamed Korean-style rice. Essential for balancing the rich flavors of grilled meats.</p>
+                                <div class="item-tags">
+                                    <span class="tag">Classic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banchan Section -->
+                <div class="banchan-section">
+                    <div class="banchan-header">
+                        <h2>Complimentary Banchan (Side Dishes)</h2>
+                        <p>Traditional Korean side dishes served with every meal - all unlimited!</p>
+                    </div>
+                    
+                    <div class="banchan-grid">
+                        <div class="banchan-item">
+                            <div class="banchan-icon">🥬</div>
+                            <h4>Kimchi</h4>
+                            <p>Fermented napa cabbage with Korean chili, garlic, and ginger</p>
+                        </div>
+                        
+                        <div class="banchan-item">
+                            <div class="banchan-icon">🥒</div>
+                            <h4>Pickled Radish</h4>
+                            <p>Sweet and tangy daikon radish - perfect palate cleanser</p>
+                        </div>
+                        
+                        <div class="banchan-item">
+                            <div class="banchan-icon">🫛</div>
+                            <h4>Bean Sprouts</h4>
+                            <p>Seasoned mung bean sprouts with sesame oil and garlic</p>
+                        </div>
+                        
+                        <div class="banchan-item">
+                            <div class="banchan-icon">🥬</div>
+                            <h4>Seasoned Spinach</h4>
+                            <p>Blanched spinach with soy sauce and sesame seeds</p>
+                        </div>
+                        
+                        <div class="banchan-item">
+                            <div class="banchan-icon">🥔</div>
+                            <h4>Korean Potato Salad</h4>
+                            <p>Creamy potato salad with vegetables and mayo</p>
+                        </div>
+                        
+                        <div class="banchan-item">
+                            <div class="banchan-icon">🥬</div>
+                            <h4>Fresh Lettuce Wraps</h4>
+                            <p>Crisp lettuce leaves for wrapping your grilled meats</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Condiments -->
+                <div class="condiments-section">
+                    <h3>Condiments & Sauces</h3>
+                    <div class="condiments-list">
+                        <span>Ssamjang (Korean BBQ sauce)</span>
+                        <span>Gochujang (Red chili paste)</span>
+                        <span>Sesame Oil with Salt</span>
+                        <span>Soy Sauce</span>
+                        <span>Fresh Garlic Slices</span>
+                        <span>Green Chili Peppers</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dietary Info -->
+        <section class="dietary-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-label">Dietary Information</span>
+                    <h2>Accommodations & Notes</h2>
+                </div>
+                
+                <div class="dietary-grid">
+                    <div class="dietary-box">
+                        <div class="dietary-icon">🌾</div>
+                        <h3>Gluten-Free Options</h3>
+                        <p>Many of our items can be prepared without soy sauce upon request. Unmarinated meats are naturally gluten-free.</p>
+                    </div>
+                    
+                    <div class="dietary-box">
+                        <div class="dietary-icon">🥗</div>
+                        <h3>Vegetarian Sides</h3>
+                        <p>All our banchan (except kimchi with fish sauce) can be prepared vegetarian. Fried rice available without meat.</p>
+                    </div>
+                    
+                    <div class="dietary-box">
+                        <div class="dietary-icon">🌶️</div>
+                        <h3>Spice Levels</h3>
+                        <p>We can adjust spice levels for any dish. Just let us know your preference when booking.</p>
+                    </div>
+                    
+                    <div class="dietary-box">
+                        <div class="dietary-icon">⚠️</div>
+                        <h3>Allergen Info</h3>
+                        <p>Contains: soy, sesame, garlic, shellfish (in some sauces). Please inform us of any allergies when booking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="menu-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Try It All?</h2>
+                    <p>Book your all-you-can-eat Korean BBQ experience today</p>
+                    <a href="contact.html" class="cta-button">Request a Quote</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="../images/logo.png" alt="logo">
+                        Seoul Wheels
+                    </div>
+                    <p>Bringing authentic Korean BBQ to your events since 2019. We specialize in mobile catering with our all-you-can-eat model, providing unlimited premium meats, traditional sides, and a full-service experience.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="../index.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="menu.html">Menu</a>
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="tel:###-####">(###) ###-####</a>
+                        <a href="mailto:hello@seoulwheels.com">hello@seoulwheels.com</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Hours</h4>
+                        <p>Mon-Fri: 10am - 10pm</p>
+                        <p>Sat-Sun: 9am - 11pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Seoul Wheels Mobile Korean BBQ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.navigation-menu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.classList.toggle('active');
+        });
+
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-button');
+        const categorySections = document.querySelectorAll('.category-section');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const category = btn.dataset.category;
+                
+                categorySections.forEach(section => {
+                    if (category === 'all' || section.dataset.category === category) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

@@ -3,9 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact - Seoul Wheels</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="navigation-bar">
+            <div class="container">
+                <div class="company-logo">
+                    <img src="../images/logo.png" alt="logo">
+                    Seoul Wheels
+                </div>
+                <ul class="navigation-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active button-navigation" href="contact.html">Book Event</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-label">Get In Touch</span>
+                    <h1>Let's Plan Your<br><span class="orange-text">Perfect Event</span></h1>
+                    <p class="hero-description">Fill out the form below and we'll get back to you within 24 hours with a custom quote tailored to your event needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Contact Section -->
+        <section class="main-contact">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Contact Info -->
+                    <div class="contact-info-column">
+                        <div class="info-section">
+                            <h2>Contact Information</h2>
+                            <p>We're here to make your event planning easy. Reach out with any questions or to get started with your booking.</p>
+                        </div>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📞</div>
+                                <div class="method-content">
+                                    <h3>Phone</h3>
+                                    <a href="tel:###-####">(###) ###-####</a>
+                                    <p class="method-note">Mon-Fri: 10am - 10pm<br>Sat-Sun: 9am - 11pm</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">✉️</div>
+                                <div class="method-content">
+                                    <h3>Email</h3>
+                                    <a href="mailto:hello@seoulwheels.com">hello@seoulwheels.com</a>
+                                    <p class="method-note">We respond within 24 hours</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">📍</div>
+                                <div class="method-content">
+                                    <h3>Service Area</h3>
+                                    <p>100-mile radius of Bozeman, Montana</p>
+                                    <p class="method-note">Travel fees may apply beyond 50 miles</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quick-info">
+                            <h3>Quick Facts</h3>
+                            <ul class="info-list">
+                                <li><span class="info-bullet">✓</span> Minimum 10 guests</li>
+                                <li><span class="info-bullet">✓</span> $30-40 per person flat rate</li>
+                                <li><span class="info-bullet">✓</span> All-you-can-eat unlimited food</li>
+                                <li><span class="info-bullet">✓</span> Complete setup & cleanup included</li>
+                                <li><span class="info-bullet">✓</span> Equipment, grills, tables provided</li>
+                                <li><span class="info-bullet">✓</span> Customizable menu options</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-column">
+                        <div class="form-container">
+                            <div class="form-header">
+                                <h2>Request a Quote</h2>
+                                <p>Tell us about your event and we'll create a custom proposal for you</p>
+                            </div>
+
+                            <form class="booking-form" id="bookingForm">
+                                <div class="form-section">
+                                    <h3>Your Information</h3>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-field">
+                                            <label for="firstName">First Name *</label>
+                                            <input type="text" id="firstName" name="firstName" required>
+                                        </div>
+                                        <div class="form-field">
+                                            <label for="lastName">Last Name *</label>
+                                            <input type="text" id="lastName" name="lastName" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label for="phone">Phone Number *</label>
+                                        <input type="tel" id="phone" name="phone" required placeholder="(###) ###-####">
+                                    </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <h3>Event Details</h3>
+
+                                    <div class="form-field">
+                                        <label for="eventType">Event Type *</label>
+                                        <select id="eventType" name="eventType" required>
+                                            <option value="">Select event type...</option>
+                                            <option value="corporate">Corporate Event</option>
+                                            <option value="wedding">Wedding/Reception</option>
+                                            <option value="birthday">Birthday Party</option>
+                                            <option value="anniversary">Anniversary</option>
+                                            <option value="graduation">Graduation</option>
+                                            <option value="festival">Festival/Market</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-field">
+                                            <label for="eventDate">Event Date *</label>
+                                            <input type="date" id="eventDate" name="eventDate" required>
+                                        </div>
+                                        <div class="form-field">
+                                            <label for="eventTime">Approximate Start Time</label>
+                                            <input type="time" id="eventTime" name="eventTime">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label for="guestCount">Number of Guests *</label>
+                                        <input type="number" id="guestCount" name="guestCount" min="10" required placeholder="Minimum 10 guests">
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label for="location">Event Location/Address *</label>
+                                        <input type="text" id="location" name="location" required placeholder="City or full address">
+                                    </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <h3>Additional Information</h3>
+
+                                    <div class="form-field">
+                                        <label for="hearAbout">How did you hear about us?</label>
+                                        <select id="hearAbout" name="hearAbout">
+                                            <option value="">Select one...</option>
+                                            <option value="google">Google Search</option>
+                                            <option value="social">Social Media</option>
+                                            <option value="friend">Friend/Family Referral</option>
+                                            <option value="previous">Previous Customer</option>
+                                            <option value="event">Saw at Event</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-field checkbox-field">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="dietaryRestrictions" id="dietaryRestrictions">
+                                            <span>We have guests with dietary restrictions or allergies</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-field">
+                                        <label for="message">Tell us about your event *</label>
+                                        <textarea id="message" name="message" rows="6" required placeholder="Share details about your event, venue type (indoor/outdoor), any special requests, dietary needs, or questions you have..."></textarea>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="submit-button">
+                                    <span>Send Request</span>
+                                    <span class="button-arrow">→</span>
+                                </button>
+
+                                <p class="form-note">* Required fields. We'll respond within 24 hours with a custom quote.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-label">Common Questions</span>
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How far in advance should I book?</h3>
+                        <p>We recommend booking at least 2-4 weeks in advance, especially for weekend events. However, we can often accommodate last-minute requests if our schedule allows.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What's included in the price?</h3>
+                        <p>Everything! Your flat rate includes unlimited food (all meats, sides, and banchan), all equipment (tables, grills, utensils), professional staff, setup, service throughout the event, and complete cleanup.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Can you accommodate dietary restrictions?</h3>
+                        <p>Yes! We can adjust our menu for gluten-free, vegetarian, and other dietary needs. Just let us know your requirements when booking and we'll customize your menu accordingly.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Do you provide indoor and outdoor service?</h3>
+                        <p>Absolutely! Our portable equipment works for both indoor and outdoor venues. We just need access to standard electrical outlets.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What's your cancellation policy?</h3>
+                        <p>We require 72 hours notice for cancellations to receive a full refund. Cancellations within 72 hours are subject to a 50% fee.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>How long does service last?</h3>
+                        <p>Typically 2-3 hours, but we can extend or shorten based on your needs. We stay as long as your guests are eating!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="contact-cta">
+            <div class="container">
+                <div class="cta-box">
+                    <div class="cta-content">
+                        <h2>Still Have Questions?</h2>
+                        <p>Give us a call or send an email - we're happy to discuss your event needs</p>
+                        <div class="cta-buttons">
+                            <a href="tel:###-####" class="cta-button primary">Call Us Now</a>
+                            <a href="mailto:hello@seoulwheels.com" class="cta-button secondary">Send Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="../images/logo.png" alt="logo">
+                        Seoul Wheels
+                    </div>
+                    <p>Bringing authentic Korean BBQ to your events since 2019. We specialize in mobile catering with our all-you-can-eat model, providing unlimited premium meats, traditional sides, and a full-service experience.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="../index.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="menu.html">Menu</a>
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="tel:###-####">(###) ###-####</a>
+                        <a href="mailto:hello@seoulwheels.com">hello@seoulwheels.com</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Hours</h4>
+                        <p>Mon-Fri: 10am - 10pm</p>
+                        <p>Sat-Sun: 9am - 11pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Seoul Wheels Mobile Korean BBQ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navMenu = document.querySelector('.navigation-menu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.classList.toggle('active');
+        });
+
+        // Form submission
+        const form = document.getElementById('bookingForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Show success message (in production, this would submit to a server)
+            alert('Thank you for your request! We\'ll get back to you within 24 hours with a custom quote.');
+            form.reset();
+        });
+    </script>
 </body>
 </html>
