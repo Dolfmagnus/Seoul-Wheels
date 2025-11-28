@@ -141,13 +141,256 @@
     border-color: var(--orange);
 }
 
-.item-image-placeholder {
+.item-image {
     background: linear-gradient(135deg, var(--orange) 0%, var(--dark-orange) 100%);
     height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4rem;
+}
+
+/* Beef */
+.img-b1 {
+    background-image: url(../images/bulgogi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-b2 {
+    background-image: url(../images/kalbi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-b3 {
+    background-image: url(../images/b3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-b4 {
+    background-image: url(../images/b4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-b5 {
+    background-image: url(../images/b5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-b6 {
+    background-image: url(../images/b6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-b7{
+    background-image: url(../images/b7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-b8{
+    background-image: url(../images/b8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-b9{
+    background-image: url(../images/b9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-b10{
+    background-image: url(../images/b10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-b11{
+    background-image: url(../images/b11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-b12{
+    background-image: url(../images/b12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* pork */
+
+.img-p1 {
+    background-image: url(../images/p1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-p2 {
+    background-image: url(../images/p2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-p3 {
+    background-image: url(../images/p3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-p4 {
+    background-image: url(../images/p4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-p5 {
+    background-image: url(../images/p5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-p6 {
+    background-image: url(../images/p6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-p7 {
+    background-image: url(../images/p7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-p8 {
+    background-image: url(../images/p8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-p9 {
+    background-image: url(../images/p9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-p10 {
+    background-image: url(../images/p10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-p11 {
+    background-image: url(../images/p11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Chicken */
+
+.img-c1 {
+    background-image: url(../images/c1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-c2 {
+    background-image: url(../images/c2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-c3 {
+    background-image: url(../images/c3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-c4 {
+    background-image: url(../images/c4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-c5 {
+    background-image: url(../images/c5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-c6 {
+    background-image: url(../images/c6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-c7 {
+    background-image: url(../images/c7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-c8 {
+    background-image: url(../images/c8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* Sides */
+.img-s1 {
+    background-image: url(../images/steamed_rice.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-s2 {
+    background-image: url(../images/beef_fried_rice.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-s3 {
+    background-image: url(../images/chicken_fried_rice.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-s4 {
+    background-image: url(../images/curry_rice.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-s5 {
+    background-image: url(../images/miso_soup.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-s6 {
+    background-image: url(../images/beef_bimbap.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-s7 {
+    background-image: url(../images/japchae.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-s8 {
+    background-image: url(../images/dumpling_soup.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .item-content {
