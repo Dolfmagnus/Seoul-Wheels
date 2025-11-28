@@ -150,9 +150,6 @@
     font-size: 4rem;
 }
 
-/* Ensure the nested image divs fill the card image area so their
-   background-image declarations are visible. Many `.img-` classes
-   are applied to an inner div, which has no size by default. */
 .item-image > div {
     width: 100%;
     height: 100%;
