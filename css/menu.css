@@ -142,7 +142,7 @@
 }
 
 .item-image {
-    background: linear-gradient(135deg, var(--orange) 0%, var(--dark-orange) 100%);
+    background: linear-gradient(135deg, var(--light-gray) 0%, var(--black) rgba(0,0,0,0.05));
     height: 120px;
     display: flex;
     align-items: center;
