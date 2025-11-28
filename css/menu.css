@@ -323,72 +323,51 @@
     background-position: center;
 }
 
-.img-c6 {
-    background-image: url(../images/c6.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.img-c7 {
-    background-image: url(../images/c7.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.img-c8 {
-    background-image: url(../images/c8.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-
-
-
 /* Sides */
 .img-s1 {
-    background-image: url(../images/steamed_rice.jpg);
+    background-image: url(../images/s1.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img-s2 {
-    background-image: url(../images/beef_fried_rice.jpg);
+    background-image: url(../images/s2.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img-s3 {
-    background-image: url(../images/chicken_fried_rice.jpg);
+    background-image: url(../images/s3.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img-s4 {
-    background-image: url(../images/curry_rice.jpg);
+    background-image: url(../images/s4.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img-s5 {
-    background-image: url(../images/miso_soup.jpg);
+    background-image: url(../images/s5.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img-s6 {
-    background-image: url(../images/beef_bimbap.jpg);
+    background-image: url(../images/s6.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img-s7 {
-    background-image: url(../images/japchae.jpg);
+    background-image: url(../images/s7.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .img-s8 {
-    background-image: url(../images/dumpling_soup.jpg);
+    background-image: url(../images/s8.jpg);
     background-size: cover;
     background-position: center;
 }
