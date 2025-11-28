@@ -74,6 +74,7 @@
     width: 100%;
     aspect-ratio: 1;
     background: linear-gradient(135deg, var(--orange) 0%, var(--dark-orange) 100%);
+    background-image: url(../images/ayce.jpg);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
