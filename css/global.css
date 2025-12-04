@@ -79,7 +79,7 @@ body {
 
 .navigation-menu a.active::after {
   content: '';
-  position: absolute;
+  position: relative;
   bottom: -5px;
   left: 0;
   width: 100%;
