@@ -78,7 +78,13 @@ body {
 }
 
 .navigation-menu a.active::after {
-    border-bottom: 1px var(--orange);
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--black);
 }
 
 .button-navigation {
