@@ -73,8 +73,12 @@ body {
     font-size: 0.95rem;
 }
 
-.navigation-menu a:hover {
+.navigation-menu a:hover a.active:after {
     color: var(--orange);
+}
+
+a.active:after {
+    border-bottom: 1px var(--orange);
 }
 
 .button-navigation {
